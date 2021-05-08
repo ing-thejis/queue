@@ -34,7 +34,7 @@ func (q *Queue) Push(v interface{}) {
 	q.footer = node
 }
 
-func (q *Queue) Pop() interface{} {
+func (q *Queue) Pull() interface{} {
 	if q.header == nil {
 		print("Queue Empty")
 		return nil
